@@ -2,3 +2,13 @@ source ~/.bash/completion_scripts/git_completion
 complete -C ~/.bash/completion_scripts/rake_completion -o default rake
 complete -C ~/.bash/completion_scripts/project_completion -o default c
 complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
+
+# bash completion settings (actually, these are readline settings)
+bind "set completion-ignore-case on" # note: bind used instead of sticking these in .inputrc
+bind "set bell-style none" # no bell
+bind "set show-all-if-ambiguous On" # show list automatically, without double tab
+
+# Turn on advanced bash completion if the file exists (get it here: http://www.caliban.org/bash/index.shtml#completion)
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi

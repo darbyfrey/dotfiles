@@ -1,14 +1,26 @@
 [user]
-	name = Ryan Bates
-	email = ryan@railscasts.com
+	name = Michael Dwan
+	email = mpdwan@gmail.com
 [alias]
 	co = checkout
-[color]
-	diff = auto
-	status = auto
-	branch = auto
-[core]
-	excludesfile = /Users/rbates/.gitignore
-	editor = mate -w
+	st = status
+	ci = commit
 [apply]
 	whitespace = nowarn
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan

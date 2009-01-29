@@ -1,5 +1,7 @@
 # cd
 alias ..='cd ..'
+alias ...='cd .. ; cd ..'
+alias ....='cd .. ; cd .. ; cd ..'
 
 # ls
 alias ls="ls -F"
