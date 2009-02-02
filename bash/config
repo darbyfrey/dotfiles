@@ -1,17 +1,17 @@
-export PS1="\w$ "
+# Hello Messsage --------------------------------------------------
+echo -e "Kernel Information: " `uname -smr`
+echo -e "${COLOR_BROWN}`bash --version`"
+echo -ne "${COLOR_GRAY}Uptime: "; uptime
+echo -ne "${COLOR_GRAY}Server time is: "; date
+
 export EDITOR="mate -w"
 
-
 # Prompts ----------------------------------------------------------
-# PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 # This includes the current git branch if in a git repo.
 #   See http://repo.or.cz/w/git.git?a=blob_plain;f=contrib/completion/git-completion.bash;hb=master
 #   PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-export PS1="\[${COLOR_GREEN}\]\w > \[${COLOR_NC}\]"  # Primary prompt with path & git branch
-# export PS1="\[${COLOR_GREEN}\]\w\[${COLOR_NC}\]\$ " OLD
-export SUDO_PS1="\[${COLOR_RED}\]\w\[${COLOR_NC}\]# "
-
-# export PS1="\[${COLOR_GRAY}\]\u@\h \[${COLOR_GREEN}\]\w > \[${COLOR_NC}\]"  # Primary prompt with user, host, and path 
+PS1="\[${COLOR_GREEN}\]\w \$(__git_ps1 '(%s)')> \[${COLOR_NC}\]"  # Primary prompt with path & git branch
+SUDO_PS1="\[${COLOR_RED}\]\w\[${COLOR_NC}\]# "
 
 # This runs before the prompt and sets the title of the xterm* window.  If you set the title in the prompt
 # weird wrapping errors occur on some systems, so this method is superior
