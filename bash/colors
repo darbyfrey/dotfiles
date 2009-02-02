@@ -5,7 +5,7 @@ export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 
 export CLICOLOR=1 
 
-alias ls='ls -G'  # OS-X SPECIFIC - the -G command in OS-X is for colors, in Linux it's no groups
+alias ls='ls -G --color=auto'  # OS-X SPECIFIC - the -G command in OS-X is for colors, in Linux it's no groups
 #alias ls='ls --color=auto' # For linux, etc
 
 # ls colors, see: http://www.linux-sxs.org/housekeeping/lscolors.html
