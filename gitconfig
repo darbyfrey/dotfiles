@@ -26,3 +26,5 @@
 	untracked = cyan
 [core]
 	excludesfile = /Users/mdwan/.gitignore
+[github]
+	user = mdwan
