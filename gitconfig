@@ -25,6 +25,6 @@
 	changed = green
 	untracked = cyan
 [core]
-	excludesfile = /Users/mdwan/.gitignore
+	excludesfile = /Users/michael/.gitignore
 [github]
 	user = michaeldwan
