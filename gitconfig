@@ -30,3 +30,5 @@
 	user = michaeldwan
 [push]
 	default = current
+[branch]
+	autosetupmerge = true
