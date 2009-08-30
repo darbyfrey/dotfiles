@@ -1,8 +1,8 @@
 # Hello Messsage --------------------------------------------------
-echo -e "Kernel Information: " `uname -smr`
-echo -e "${COLOR_BROWN}`bash --version`"
-echo -ne "${COLOR_GRAY}Uptime: "; uptime
-echo -ne "${COLOR_GRAY}Server time is: "; date
+printf "Kernel Information: `uname -smr`\n" 
+printf "${COLOR_BROWN}`bash --version`\n"
+printf "${COLOR_GRAY}Uptime: `uptime`\n"
+printf "${COLOR_GRAY}Server time is: `date`\n"
 
 export EDITOR="mate -w"
 
