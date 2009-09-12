@@ -1,6 +1,6 @@
 [user]
-	name = Avand Amiri
-	email = andy@andyamiri.com
+	name = <%= name %>
+	email = <%= email %>
 [alias]
 	co = checkout
 	st = status
@@ -25,7 +25,7 @@
 	changed = green
 	untracked = cyan
 [core]
-	excludesfile = /Users/Avand/.gitignore
+	excludesfile = <%= home_dir %>/.gitignore
 [github]
 	user = michaeldwan
 [push]
