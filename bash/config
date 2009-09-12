@@ -15,7 +15,7 @@ SUDO_PS1="\[${COLOR_RED}\]\w\[${COLOR_NC}\]# "
 
 # This runs before the prompt and sets the title of the xterm* window.  If you set the title in the prompt
 # weird wrapping errors occur on some systems, so this method is superior
-export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -ne "\007"'  # user@host path
+# export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -ne "\007"'  # user@host path
 
 export PS2='$ '    # Secondary prompt
 export PS3='#? '   # Prompt 3
