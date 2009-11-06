@@ -34,7 +34,7 @@ alias rst='touch tmp/restart.txt'
 alias %=' '
 
 # changing directory to code project
-function c { cd ~/code/$1; }
+function c { cd ~/projects/$1; }
 
 # misc
 alias reload='. ~/.bash_profile'
