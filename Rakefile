@@ -41,6 +41,9 @@ def generate_gitconfig
   print "What is your email? "
   email = $stdin.gets.chomp
   
+  print "What is your github login? "
+  github_login = $stdin.gets.chomp
+  
   File.open(File.join(File.expand_path(File.dirname(__FILE__)), 'gitconfig'), 'w') do |gitconfig|
     gitconfig.write(ERB.new(File.read('templates/gitconfig.erb')).result(binding))
   end
