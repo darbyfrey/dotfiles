@@ -25,3 +25,8 @@ function xtitle {  # change the title of your xterm* window
   unset PROMPT_COMMAND
   echo -ne "\033]0;$1\007" 
 }
+
+# Append commands to the bash history for each tab rather than overwrite. This kicks ass when using multiple tabs.
+# See http://marc-abramowitz.com/archives/2005/03/19/dont-lose-history-in-bash/
+shopt -s histappend
+PROMPT_COMMAND='history -a'
